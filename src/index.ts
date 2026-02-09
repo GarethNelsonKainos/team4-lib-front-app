@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const projectRoot = path.resolve(__dirname, '..');
-const appViews = path.join(__dirname, 'views');
+const appViews = path.join(projectRoot, 'src/views');
 
 const app = express();
 const port = 3001;
@@ -40,6 +40,6 @@ app.use('/assets', express.static(
   path.join(projectRoot, 'node_modules/govuk-frontend/dist/govuk/assets')
 ));
 
-app.listen(3001, () => {
+app.listen(port, () => {
     console.log(`App listening on port ${port}`)
 });

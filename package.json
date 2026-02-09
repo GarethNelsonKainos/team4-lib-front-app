@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Team 4 Library Frontend Application Feb/March 2026",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
